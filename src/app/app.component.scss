@@ -1,0 +1,23 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+#toolbar{
+    background-color: blue;
+    color: aliceblue;
+}  
+.main-body{
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1248px;
+  mat-form-field{
+    width: 100%;
+  }
+}
+
+#icon1{
+  color: blue;
+}
+
+#icon2{
+  color: red;
+}

@@ -1,0 +1,23 @@
+<div id="mat-dialog-title">Health Tracker Form</div>
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+<div id="mat-dialog-content">
+    <mat-form-field appearance="outline">
+        <mat-label id="box1">Name</mat-label>
+        <input matInput aria-label="goo" placeholder="Ex. Smith" formControlName="Name">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label id="box2">Workout Type</mat-label>
+        <mat-select formControlName="Workout">
+          <mat-option *ngFor="let val of Type" [value]="val">{{val}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label id="box1">Workout Minutes</mat-label>
+        <input matInput aria-label="goo" placeholder="Ex. 20" formControlName="Time">
+      </mat-form-field>
+</div>
+<div id="mat-dialog-actions">
+    <button mat-raised-button>Cancel</button>
+    <button mat-raised-button id="save" type="submit">Save</button>
+</div>
+</form>
